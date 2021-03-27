@@ -1,0 +1,89 @@
+<!--
+© Siemens AG, 2018
+Author: Berkay Alp Cakal (berkay_alp.cakal.ct@siemens.com)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+<http://www.apache.org/licenses/LICENSE-2.0>.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<launch>
+
+        <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+                <param name="port" value="9090"/>
+        </include>
+        
+
+        <!-- <node pkg="goodgame_fptu_dl" name="Goodgame_lefttask" type="left_task.py" output="screen"> 
+                
+                <param name="traffic_detection" value="$(find goodgame_fptu_dl)/scripts/saved/shared.pkl" />
+
+		<param name="left_traffic_sign" value="$(find goodgame_fptu_dl)/scripts/object_detection/left_hihi.xml" />
+	</node>
+
+	<node pkg="goodgame_fptu_dl" name="Goodgame_righttask" type="right_task.py" output="screen">
+
+                <param name="traffic_detection" value="$(find goodgame_fptu_dl)/scripts/saved/shared.pkl" />
+        
+                <param name="right_traffic_sign" value="$(find goodgame_fptu_dl)/scripts/object_detection/right_hihi.xml" />
+        </node>
+  -->
+        
+        <!--
+
+        <node pkg="goodgame_fptu_dl" name="Goodgame_balancetask" type="balance_task.py" output="screen">
+
+                <param name="lane_detection" value="$(find goodgame_fptu_dl)/scripts/saved/shared_lane.pkl" />
+
+        </node>
+        <node pkg="goodgame_fptu_dl" name="Goodgame_traffictask" type="traffic_sign.py" output="screen">
+
+                <param name="lane_detection" value="$(find goodgame_fptu_dl)/scripts/saved/shared_lane.pkl" />
+
+        </node>
+        -->
+
+        <!--
+        <node pkg="goodgame_fptu_dl" name="Goodgame_depthtask" type="depth_task.py" output="screen">
+        
+                <param name="depth_detection" value="$(find goodgame_fptu_dl)/scripts/saved/obstacle.pkl" />
+
+        </node>
+        -->
+        
+        <node pkg="goodgame_fptu_dl" name="Goodgame_balancetask" type="balance_task.py" output="screen">
+
+                <param name="lane_detection" value="$(find goodgame_fptu_dl)/scripts/saved/shared_lane.pkl" />
+
+        </node> 
+
+        <node pkg="goodgame_fptu_dl" name="Goodgame_main" type="main.py" output="screen">
+
+                <param name="car_detection" value="$(find goodgame_fptu_dl)/scripts/object_detection/car_2312.xml" />
+
+                <param name="traffic_detection" value="$(find goodgame_fptu_dl)/scripts/saved/shared.pkl" />
+
+                <param name="lane_detection" value="$(find goodgame_fptu_dl)/scripts/saved/shared_lane.pkl" />
+
+                <param name="depth_detection" value="$(find goodgame_fptu_dl)/scripts/saved/obstacle.pkl" />
+
+                <param name="car_pkl" value="$(find goodgame_fptu_dl)/scripts/saved/shared_car.pkl" />
+
+                <param name="model_dl" value="$(find goodgame_fptu_dl)/scripts/Model/peace_epoch_49.h5" />
+
+                <!-- <param name="ssd_model" value="$(find goodgame_fptu_dl)/scripts/Model/g2_epoch-17_loss-0.3301_val_loss-0.1611.h5" /> -->
+
+                <param name="ssd_model" value="$(find goodgame_fptu_dl)/scripts/Model/model_chuan_khong_bung_binh.h5"/>
+
+        </node>
+
+
+</launch>
+
+
