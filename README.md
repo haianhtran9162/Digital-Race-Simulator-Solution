@@ -42,6 +42,5 @@ Run command `pip2 install websocket_client --user`
 ### Lỗi disconnect websocket 
 
 Run command 
-```pip uninstall tornado
-sudo apt-get install ros-melodic-rosbridge-suite
-``` 
+`pip uninstall tornado`
+`sudo apt-get install ros-melodic-rosbridge-suite`
