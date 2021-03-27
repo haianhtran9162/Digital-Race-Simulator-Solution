@@ -30,3 +30,19 @@ Download link: http://bit.ly/cds-simulator-2019
 4. (Optional) Nếu hệ thống yêu cầu cấp quyền cho một số file chạy thì cd vào thư mục chứa file đó và cấp quyền: `$ sudo chmod +x <tên_file>`
 5. Mở simmulator và điền với Team name : **g2_never_die** và Port : **ws://127.0.0.1:9090**
 6. Ấn Start
+## Issues
+### Lỗi **no module named rospy_message_converter** 
+
+Run command `sudo apt install ros-melodic-rospy-message-converter`
+
+### Lỗi **no module named websocket** 
+
+Run command `pip2 install websocket_client --user`
+
+### Lỗi disconnect websocket 
+
+Run command 
+```bash
+pip uninstall tornado
+sudo apt-get install ros-melodic-rosbridge-suite
+``` 
