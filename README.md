@@ -1,6 +1,6 @@
 ## Digital-Race-Simulator-Solution
 ![maxresdefault](https://user-images.githubusercontent.com/48562455/112740137-a58fb800-8fa4-11eb-8da9-a3c4d58b7546.jpg)
-## Thông tin hệ thống ch
+## Thông tin hệ thống chúng tôi sử dụng
 Ubuntu 18.4 LTS\
 Python 2.7\
 CUDA 10.0\
