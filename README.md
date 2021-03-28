@@ -25,7 +25,7 @@ Keras 2.2.4
 ## Download Simulator
 Download link: http://bit.ly/cds-simulator-2019
 
-Simulator sa hình thật: https://github.com/vietanhdev/cuoc-dua-so-fpt-round2-sim
+Simulator xây dựng  sa hình thật: https://github.com/vietanhdev/cuoc-dua-so-fpt-round2-sim
 ## Hướng dẫn chạy source code
 1. Clone/Download code
 2. Sao chép thư mục goodgame_fptu_dl vào thư mục catkin_ws vừa tạo trên
