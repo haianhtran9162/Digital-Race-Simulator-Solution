@@ -23,7 +23,7 @@ Keras 2.2.4
 3. Cài đặt rosbridge-suite\
 `$ sudo apt-get install ros-lunar-rosbridge-server`
 ## Download Simulator
-Download link: http://bit.ly/cds-simulator-2019
+Simulator được BTC cung cấp: http://bit.ly/cds-simulator-2019
 
 Simulator xây dựng dựa trên sa hình thật: https://github.com/vietanhdev/cuoc-dua-so-fpt-round2-sim
 ## Hướng dẫn chạy source code
